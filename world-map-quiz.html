@@ -14,6 +14,38 @@
         const WORLD_MAP_SVG = "worldmap-svg";
 
         const countryList = [{
+            key: ["AFGANİSTAN", "AFGHANISTAN", "AFGHANİSTAN"],
+            value: "Afghanistan",
+        }, {
+            key: ["ANGOLA"],
+            value: "Angola",
+        }, {
+            key: ["ARNAVUTLUK", "ALBANIA"],
+            value: "Albania",
+        }, {
+            key: [
+                "UAE",
+                "ARAP EMİRLİKLERİ",
+                "BİRLEŞİK ARAP EMİRLİKLERİ",
+                "UNITED ARAB EMIRATES",
+            ],
+            value: "United Arab Emirates",
+        }, {
+            key: ["ARJANTIN", "ARJANTİN", "ARGENTINA", "ARGENTİNA"],
+            value: "Argentina",
+        }, {
+            key: ["ERMENİSTAN", "ARMENIA", "ARMENİA"],
+            value: "Armenia",
+        }, {
+            key: ["AVUSTRALYA", "AUSTRALIA", "AUSTRALİA"],
+            value: "Australia",
+        }, {
+            key: ["AVUSTURYA", "AUSTRIA", "AUSTRİA"],
+            value: "Austria",
+        }, {
+            key: ["AZERBAYCAN", "AZERBAIJAN", "AZERBAİJAN"],
+            value: "Azerbaijan",
+        }, {
             key: ["TURKEY", "TÜRKİYE"],
             value: "Turkey",
         }, {
@@ -39,16 +71,16 @@
                     pathes = document
                         .getElementById(WORLD_MAP_SVG)
                         .getElementsByClassName(countryList[i].value);
-                    console.log(pathes);
+
                     // if there is, then fill it.
                     Array.from(pathes).forEach((el) => {
                         el.setAttribute("style", "fill: #66FF66");
                     });
+
+                    document.getElementById("country").value = "";
                 }
                 i++;
             }
-
-            document.getElementById("country").value = "";
         }
     </script>
     <h1>WORLD MAP QUIZ</h1>
@@ -111,7 +143,7 @@
         <path
           d="M1383 261.6l1.5 1.8-2.9 0.8-2.4 1.1-5.9 0.8-5.3 1.3-2.4 2.8 1.9 2.7 1.4 3.2-2 2.7 0.8 2.5-0.9 2.3-5.2-0.2 3.1 4.2-3.1 1.7-1.4 3.8 1.1 3.9-1.8 1.8-2.1-0.6-4 0.9-0.2 1.7-4.1 0-2.3 3.7 0.8 5.4-6.6 2.7-3.9-0.6-0.9 1.4-3.4-0.8-5.3 1-9.6-3.3 3.9-5.8-1.1-4.1-4.3-1.1-1.2-4.1-2.7-5.1 1.6-3.5-2.5-1 0.5-4.7 0.6-8 5.9 2.5 3.9-0.9 0.4-2.9 4-0.9 2.6-2-0.2-5.1 4.2-1.3 0.3-2.2 2.9 1.7 1.6 0.2 3 0 4.3 1.4 1.8 0.7 3.4-2 2.1 1.2 0.9-2.9 3.2 0.1 0.6-0.9-0.2-2.6 1.7-2.2 3.3 1.4-0.1 2 1.7 0.3 0.9 5.4 2.7 2.1 1.5-1.4 2.2-0.6 2.5-2.9 3.8 0.5 5.4 0z"
           id="AF"
-          name="Afghanistan"
+          class="Afghanistan"
         ></path>
         <path
           class="Angola"
@@ -124,12 +156,12 @@
         <path
           d="M1088 228l0.4 1.2 1.4-0.6 1.2 1.7 1.3 0.7 0.6 2.3-0.5 2.2 1 2.7 2.3 1.5 0.1 1.7-1.7 0.9-0.1 2.1-2.2 3.1-0.9-0.4-0.2-1.4-3.1-2.2-0.7-3 0.1-4.4 0.5-1.9-0.9-1-0.5-2.1 1.9-3.1z"
           id="AL"
-          name="Albania"
+          class="Albania"
         ></path>
         <path
           d="M1296.2 336.7l1.3 5.1-2.8 0 0 4.2 1.1 0.9-2.4 1.3 0.2 2.6-1.3 2.6 0 2.6-1 1.4-16.9-3.2-2.7-6.6-0.3-1.4 0.9-0.4 0.4 1.8 4.2-1 4.6 0.2 3.4 0.2 3.3-4.4 3.7-4.1 3-4 1.3 2.2z"
           id="AE"
-          name="United Arab Emirates"
+          class="United Arab Emirates"
         ></path>
         <path
           class="Argentina"
@@ -149,7 +181,7 @@
         <path
           d="M1230.8 253l-1.8 0.2-2.8-3.7-0.2-1-2.3 0-1.9-1.7-1 0.1-2.4-1.8-4.2-1.6-0.1-3.1-1.3-2.2 7-1 1.4 1.6 2.2 1.1-0.7 1.6 3.2 2.2-1.1 2.1 2.6 1.7 2.5 1 0.9 4.5z"
           id="AM"
-          name="Armenia"
+          class="Armenia"
         ></path>
         <path
           class="Australia"
@@ -162,7 +194,7 @@
         <path
           d="M1070.6 190.8l-0.3 0.8 0.7 2.1-0.2 2.6-2.8 0 1.1 1.4-1.3 4-0.9 1.1-4.4 0.1-2.4 1.5-4.2-0.5-7.3-1.7-1.3-2.1-4.9 1.1-0.5 1.2-3.1-0.9-2.6-0.2-2.3-1.2 0.7-1.5-0.2-1.1 1.4-0.3 2.7 1.7 0.6-1.7 4.4 0.3 3.5-1.1 2.4 0.2 1.7 1.3 0.4-1.1-1-4.1 1.7-0.8 1.6-2.9 3.8 2.1 2.6-2.6 1.7-0.5 4 1.9 2.3-0.3 2.4 1.2z"
           id="AT"
-          name="Austria"
+          class="Austria"
         ></path>
         <path
           class="Azerbaijan"
