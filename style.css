@@ -1,10 +1,9 @@
-body{
-    margin: 0;
-    padding: 100px;
-    background-color: #eee;
+.context{
+    background-color: #eee;  
 }
 
 h1{
+    text-align: center;
     text-shadow: 2px 2px 5px red;
 }
 
@@ -17,7 +16,7 @@ h1{
 .map{
     border: 1px solid black;
     background-color: #65B6F0;
-    padding: 10px;
+    padding: 20px;
 }
 
 svg path{
