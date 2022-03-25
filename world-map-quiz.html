@@ -91,11 +91,8 @@
 <h1>WORLD MAP QUIZ</h1>
 
 <div class="search-input">
-    <input type="text" id="country" class="q" placeholder="Enter a country name..."
-           onkeyup="this.value=this.value.toLowerCase();"/>
-    <button accesskey="x" onClick="fill(document.getElementById('country').value)">
-        Search
-    </button>
+    <input type="text" id="country" placeholder="Enter a country name..."
+           onkeyup="this.value=this.value.toLowerCase();" oninput="fill(this.value)"/>
 </div>
 <div class="map">
     <svg id="worldmap-svg" baseprofile="tiny" stroke-linecap="round" stroke-linejoin="round" version="1.2"
