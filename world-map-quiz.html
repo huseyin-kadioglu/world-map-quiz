@@ -56,10 +56,6 @@
             value: "russia",
         }, ];
 
-        function forceLowerCase(input) {
-            input.value=input.value.toLowerCase();
-        }
-
         function fill(country) {
             // convert to upper case
             country = country.toUpperCase();
@@ -90,7 +86,7 @@
     <h1>WORLD MAP QUIZ</h1>
 
     <div class="search-input">
-        <input type="text" id="country" class="q" placeholder="Enter a country name..." onkeyup="return forceLowerCase(this);" />
+        <input type="text" id="country" class="q" placeholder="Enter a country name..." onkeyup="this.value=this.value.toLowerCase();" />
         <button accesskey="x" onClick="fill(document.getElementById('country').value)">
         Search
       </button>
