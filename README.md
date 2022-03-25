@@ -2,17 +2,19 @@
 
 https://www.jetpunk.com/quizzes/how-many-countries-can-you-name 
 
-Uzun zaman önce denk geldiğim bir quizdi, zaman zaman girip kendimi test ediyordum. Fakat bir süre sonra bunu nasıl yapabileceğimi düşünmeye başladım. Biraz üstüne kafa yorduktan sonra tabii yoğunluk da var, unutuldu gitti. Bir 4-5 ay sonra boş bir vakit yaratıp yazmaya başladım. 
+Denk geldiğimde çok hoşuma giden bir quizdi. Nasıl yapılacağını düşündüm ve kodlamaya başladım. Beğenmediğim yerleri çıkartarak, güzel olacağını düşündüğüm yerleri ekleyerek bir yere kadar getirmek istediğim bir proje. 
 
 
 ![image](https://user-images.githubusercontent.com/70078389/159091824-54914fc4-0c22-4e40-a30e-c39bf5afdfce.png)
 
 v1:
-- [ ] UI geliştirilecek. 
-- [ ] Bütün ülkeleri kapsayacak bir harita oluşturulmalı.
-- [ ] Butona tıklamak yerine yazılanı direkt algılayan bir yapı olmalı. 
-- [X] Ülke isimleri hem Türkçe hem İngilizce algılanabilir olmalı.
-- [ ] Kaç ülke kaldığı gibi bir logic eklenebilirse yüzde olarak sonuç paylaşılabilir, skor yapısı oluşturulabilir. Küçük ülkeler zaten gözükmeyecek, bilip bilmediğini algılamayabilir.
-- [ ] Bir sayaç eklenip competitive hale getirilebilir.
+- [X] Türkçe-İngilizce dil desteği eklendi. 
 - [ ] Kıta bilgisi eklenip hangi kıtada ne kadar sonuç alındığı görülebilir.
+- [ ] Sisteme timer eklenebilir. Butona basıldığında input available olur ve timer başlar. Süre bittiğinde oran verilebilir.
+
+
+
+v2- not yet.
+- [ ] Kıta bilgisi eklenecek ve harita altında kıta tabloları olacak. Doğru girilen ülke bulunduğu kıtanın altında belirecek.
+- [ ] Bütün ülkelerin bulunacağı yeni bir harita dizaynı yapılacak.
 
