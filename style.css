@@ -29,12 +29,12 @@ h1 {
 
 svg path {
     fill: #FFFF80;
-    stroke: rgb(32, 30, 30);
-    stroke-width: .25;
+    stroke: black;
+    stroke-width: .40;
 }
 
 svg path:hover {
-    fill: #006284;
+    fill: #FFEE39;
     transition: 0.6s;
     cursor: pointer;
 }
