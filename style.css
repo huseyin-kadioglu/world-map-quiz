@@ -1,24 +1,22 @@
 .context {
     margin: 50px;
+    display: block;
 }
 
 h1 {
     text-align: center;
 }
 
-#country-progress {
+#guessed-country {
     font-size: 1rem;
-    animation-name: example;
-    animation-duration: 1s;
 }
 
-@keyframes example {
-    from {
-        font-size: 2rem;
-    }
-    to {
-        font-size: 1rem
-    }
+#country-progress {
+    font-size: 1rem;
+}
+
+.shown-data{
+    margin-top: 10px;
 }
 
 .input {

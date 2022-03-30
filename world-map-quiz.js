@@ -589,11 +589,28 @@ function resetTextInput() {
 }
 
 function showCountryProgress() {
-    document.getElementById("country-progress").textContent = enteredCountryList.length + "/" + countryList.length + " guessed"
+    document.getElementById("guessed-country").textContent = enteredCountryList.length;
+    document.getElementById("guessed-country").animate([
+        // keyframes
+        {fontSize: '2rem'},
+        {fontSize: '1rem'}
+    ], {
+        // timing options
+        duration: 1000
+    });
+    document.getElementById("country-progress").textContent = "/" + countryList.length + " guessed";
 }
 
 function initialCountryProgress() {
-    console.log("onload!")
-    document.getElementById("country-progress").textContent = "0/" + countryList.length;
+    document.getElementById("guessed-country").textContent = enteredCountryList.length;
+    document.getElementById("guessed-country").animate([
+        // keyframes
+        {fontSize: '2rem'},
+        {fontSize: '1rem'}
+    ], {
+        // timing options
+        duration: 1000
+    });
+    document.getElementById("country-progress").textContent = "/" + countryList.length + " guessed";
 
 }
