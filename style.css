@@ -28,10 +28,10 @@ h1 {
 }
 
 .answer-box {
-    display: block;
 }
 
-.answer-box p {
+.answer-box-text {
+    font-size: 1rem;
     font-family: "Book Antiqua", serif;
 }
 
