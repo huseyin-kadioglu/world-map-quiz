@@ -592,7 +592,7 @@ function showCountryProgress() {
     document.getElementById("guessed-country").textContent = enteredCountryList.length;
     document.getElementById("guessed-country").animate([
         // keyframes
-        {fontSize: '2rem'},
+        {fontSize: '1.2rem'},
         {fontSize: '1rem'}
     ], {
         // timing options

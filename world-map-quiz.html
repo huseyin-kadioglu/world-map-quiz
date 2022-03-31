@@ -12,18 +12,25 @@
 <body onload="initialCountryProgress()">
 
 <script src="world-map-quiz.js"></script>
-
-<h1>WORLD MAP QUIZ</h1>
-
 <div class="context">
-    <div class="input">
-        <input class="search-input" id="country" oninput="fill(this.value)"
-               onkeyup="this.value=this.value.toLowerCase();"
-               placeholder="Enter a country name..." type="text"/>
+
+    <h1>WORLD MAP QUIZ</h1>
+
+    <div class="quiz-controls">
+        <div class="timer-cell"></div>
+        <div class="right-of-timer">
+            <div class="answer-box">
+                <p>Enter country's name here:</p>
+                <input class="search-input" id="country" oninput="fill(this.value)"
+                       onkeyup="this.value=this.value.toLowerCase();" type="text"/>
+                <div class="buttons-or-something"></div>
+            </div>
+            <div class="guessed-line">
+                <span id="guessed-country"></span><span id="country-progress"></span>
+            </div>
+        </div>
     </div>
-    <div class="shown-data">
-        <span id="guessed-country"></span><span id="country-progress"></span>
-    </div>
+
 
     <div class="map">
         <svg baseprofile="tiny" id="worldmap-svg" stroke-linecap="round" stroke-linejoin="round" version="1.2"

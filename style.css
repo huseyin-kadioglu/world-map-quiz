@@ -1,10 +1,22 @@
+body {
+}
+
 .context {
-    margin: 50px;
-    display: block;
+    margin: 0 20% 0 20%;
 }
 
 h1 {
     text-align: center;
+    font-family: "Book Antiqua", serif;
+}
+
+.quiz-controls {
+    margin: 0;
+    display: inline-flex;
+}
+
+.right-of-timer {
+    display: inline-block;
 }
 
 #guessed-country {
@@ -15,31 +27,38 @@ h1 {
     font-size: 1rem;
 }
 
-.shown-data{
-    margin-top: 10px;
+.answer-box {
+    display: block;
 }
 
-.input {
-    margin: 0;
-    display: inline-flex;
+.answer-box p {
+    font-family: "Book Antiqua", serif;
 }
 
 .search-input {
     width: 150px;
-    font-size: max(16px, 1em);
-    font-family: inherit;
-    padding: 1px;
-    background-color: #fff;
-    border: 2px solid;
-    border-radius: 4px;
-    line-height: 1;
-    height: 2.25rem;
+    padding: 5px;
+    margin-right: 10px;
+    height: 100%;
 }
 
+.guessed-line {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: "Book Antiqua", serif;
+    border: 2px outset whitesmoke;
+    border-radius: 20px;
+    text-align: center;
+    width: 150px;
+}
+
+.timer-cell {
+
+}
 
 .map {
-    margin-top: 10px;
-    border: 1px solid black;
+    border: 2px outset #65B6F0;
+    border-radius: 10px;
     background-color: #65B6F0;
     padding: 20px;
 }
