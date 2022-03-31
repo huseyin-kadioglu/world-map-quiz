@@ -603,14 +603,6 @@ function showCountryProgress() {
 
 function initialCountryProgress() {
     document.getElementById("guessed-country").textContent = enteredCountryList.length;
-    document.getElementById("guessed-country").animate([
-        // keyframes
-        {fontSize: '2rem'},
-        {fontSize: '1rem'}
-    ], {
-        // timing options
-        duration: 1000
-    });
     document.getElementById("country-progress").textContent = "/" + countryList.length + " guessed";
 
 }
