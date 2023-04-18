@@ -1,55 +1,63 @@
 body {
+    margin: 0 15% 0 15%;
+    text-align: center;
+    /* align-items: center; */
 }
 
 .context {
-    margin: 0 20% 0 20%;
+    /* align-content: center;    
+    padding: 10px 40px 40px 40px;
+
+    height: 80%;
+    width: 70%; */
 }
 
 h1 {
-    text-align: center;
-    font-family: "Book Antiqua", serif;
+    text-shadow: 1px 1px;
 }
 
 .quiz-controls {
-    margin: 0;
-    display: inline-flex;
 }
 
 .right-of-timer {
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 #guessed-country {
-    font-size: 1rem;
+    /* font-size: 1rem; */
 }
 
 #country-progress {
-    font-size: 1rem;
+    /* font-size: 1rem; */
 }
 
 .answer-box {
 }
 
 .answer-box-text {
+    /* color: #e0f0fc;
+    text-align: center;
     font-size: 1rem;
-    font-family: "Book Antiqua", serif;
+    font-family: "Book Antiqua", serif; */
 }
 
 .search-input {
-    width: 150px;
-    padding: 5px;
-    margin-right: 10px;
-    height: 100%;
+    /* margin-top: 5px;
+    background-color: whitesmoke;
+    border-radius: 2px;
+    height: 20px; */
 }
 
 .guessed-line {
-    margin-top: 20px;
+    /* color: #e0f0fc;
+    text-align: center;
+    margin: 20px 0px 30px 10px;
     margin-bottom: 30px;
     font-family: "Book Antiqua", serif;
     border: 2px outset whitesmoke;
     border-radius: 20px;
     text-align: center;
-    width: 150px;
+    width: 150px; */
 }
 
 .timer-cell {
@@ -57,20 +65,23 @@ h1 {
 }
 
 .map {
-    border: 2px outset #65B6F0;
+    
+    background-image: radial-gradient(ellipse at center, aqua, transparent);
+    /* border: 2px outset #5c7485;
     border-radius: 10px;
-    background-color: #65B6F0;
-    padding: 20px;
+    background-color: #5c7485; */
 }
 
 svg path {
     fill: #FFFF80;
     stroke: black;
-    stroke-width: .40;
+    /* fill: #FFFF80;
+    stroke: black;
+    stroke-width: .40; */
 }
 
 svg path:hover {
-    fill: #FFEE39;
+    /* fill: #FFEE39;
     transition: 0.6s;
-    cursor: pointer;
+    cursor: pointer; */
 }

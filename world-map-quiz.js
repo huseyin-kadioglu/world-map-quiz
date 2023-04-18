@@ -590,14 +590,7 @@ function resetTextInput() {
 
 function showCountryProgress() {
     document.getElementById("guessed-country").textContent = enteredCountryList.length;
-    document.getElementById("guessed-country").animate([
-        // keyframes
-        {fontSize: '1.2rem'},
-        {fontSize: '1rem'}
-    ], {
-        // timing options
-        duration: 1000
-    });
+    //document.getElementById("guessed-country").animate([ {fontSize: '1.2rem'}, {fontSize: '1rem'}], {  duration: 1000});
     document.getElementById("country-progress").textContent = "/" + countryList.length + " guessed";
 }
 
