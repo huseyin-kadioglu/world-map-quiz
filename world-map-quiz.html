@@ -12,21 +12,21 @@
 <body onload="initialCountryProgress()">
 
 <script src="world-map-quiz.js"></script>
-<div class="context"> 
+<div class="context">
 
     <h1>WORLD MAP QUIZ</h1>
 
     <div class="quiz-controls">
-        
+
         <button id="start-button" onclick="countdownTimer()">START</button>
         <p id="countdown-timer"></p>
-    
+
 
         <div class="right-of-timer">
             <div class="answer-box">
                 <div class="answer-box-text">Enter country's name here:</div>
                 <input class="search-input" id="country" oninput="fill(this.value)"
-                       onkeyup="this.value=this.value.toLowerCase();" type="text" />
+                       onkeyup="this.value=this.value.toLowerCase();" type="text"/>
                 <div class="buttons-or-something"></div>
             </div>
             <div class="guessed-line">
