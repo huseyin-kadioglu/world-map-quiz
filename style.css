@@ -1,27 +1,38 @@
 body {
+    
     margin: 0 15% 0 15%;
     text-align: center;
-    /* align-items: center; */
+    background-image: radial-gradient(ellipse at center, aqua, transparent);
 }
 
 .context {
-    /* align-content: center;    
-    padding: 10px 40px 40px 40px;
-
-    height: 80%;
-    width: 70%; */
+    /* covers name, quiz-input, map */
 }
 
 h1 {
+    /* covers name */
     text-shadow: 1px 1px;
 }
 
-.quiz-controls {
+#countdown-timer{
 }
 
-.right-of-timer {
-    /* display: inline-block; */
+.quiz-controls div {
+    /* covers timer and the input related components */
+    display: block;
 }
+
+.quiz-controls .timer {
+    background-color: white;
+    padding: 10px;
+    border:1px solid black;
+    font-family:    Arial, Helvetica, sans-serif;
+    font-size:      20px;
+    font-weight:    bold;
+}
+
+.right-of-timer div {
+   display: block; }
 
 #guessed-country {
     /* font-size: 1rem; */
@@ -60,28 +71,20 @@ h1 {
     width: 150px; */
 }
 
-.timer-cell {
-
-}
-
 .map {
-    
-    background-image: radial-gradient(ellipse at center, aqua, transparent);
-    /* border: 2px outset #5c7485;
-    border-radius: 10px;
-    background-color: #5c7485; */
+    padding-top: 60px;
+    /* margin-top: 100px; */
 }
 
 svg path {
     fill: #FFFF80;
     stroke: black;
-    /* fill: #FFFF80;
-    stroke: black;
-    stroke-width: .40; */
+    stroke-width: .60;
+    /* stroke-width: .40; */
 }
 
 svg path:hover {
-    /* fill: #FFEE39;
+    cursor: pointer;
+    fill: #FFEE39;
     transition: 0.6s;
-    cursor: pointer; */
 }

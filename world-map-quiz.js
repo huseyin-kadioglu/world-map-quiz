@@ -553,6 +553,41 @@ const countryList = [
 
 ];
 
+//
+// Set the date we're counting down to
+function countdownTimer(){
+
+    document.getElementById("start-button").outerHTML = "";
+
+    var countDownDate = new Date().getTime() + 15 * 60 * 1000;
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for hours, minutes and seconds
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("countdown-timer").innerHTML =  minutes + ":" + seconds;
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown-timer").innerHTML = "EXPIRED";
+    // Süre bittiğinde textin de kapatılıyor olması gerek.
+  }
+}, 1000);
+
+}
+//
+
 const enteredCountryList = [];
 
 function fill(country) {
@@ -565,17 +600,13 @@ function fill(country) {
         if (countryList[i].key.includes(country)) {
 
             if (!enteredCountryList.includes(countryList[i].value)) {
+                
+                pathes = document.getElementById(WORLD_MAP_SVG).getElementsByClassName(countryList[i].value);
 
-                pathes = document
-                    .getElementById(WORLD_MAP_SVG)
-                    .getElementsByClassName(countryList[i].value);
-
-
-                Array.from(pathes).forEach((el) => {
-                    el.setAttribute("style", "fill: #66FF66");
-                });
+                Array.from(pathes).forEach(el =>  el.setAttribute("style", "fill: #66FF66"));
 
                 enteredCountryList.push(countryList[i].value);
+
                 resetTextInput();
                 showCountryProgress();
             }
