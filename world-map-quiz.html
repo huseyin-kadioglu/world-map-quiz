@@ -25,15 +25,8 @@
         <div id="right-of-timer" class="right-of-timer disabled">
             <div class="answer-box">
                 <div class="answer-box-text">Enter country's name here:</div>
-
-                <input
-                        id="answer-box-input"
-                        type="text"
-                        class="search-input"
-                        oninput="fill(this.value)"
-                        onkeyup="this.value=this.value.toLowerCase();"
-                />
-
+                <input class="search-input" id="country" oninput="fill(this.value)"
+                       onkeyup="this.value=this.value.toLowerCase();" type="text"/>
                 <div class="buttons-or-something"></div>
             </div>
             <div class="guessed-line">
