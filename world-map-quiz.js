@@ -555,7 +555,7 @@ const countryList = [
 
 //
 // Set the date we're counting down to
-function countdownTimer() {
+function startQuizAndRenderTimer() {
 
     document.getElementById("start-button").outerHTML = "";
 
@@ -585,6 +585,8 @@ function countdownTimer() {
         }
     }, 1000);
 
+    // actually, its removing disabled from the classname
+    document.getElementById("right-of-timer").className = "right-of-timer";
 }
 
 //

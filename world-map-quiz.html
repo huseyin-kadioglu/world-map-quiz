@@ -18,15 +18,22 @@
 
     <div class="quiz-controls">
 
-        <button id="start-button" onclick="countdownTimer()">START</button>
+        <button id="start-button" onclick="startQuizAndRenderTimer()">START</button>
         <p id="countdown-timer"></p>
 
 
-        <div class="right-of-timer">
+        <div id="right-of-timer" class="right-of-timer disabled">
             <div class="answer-box">
                 <div class="answer-box-text">Enter country's name here:</div>
-                <input class="search-input" id="country" oninput="fill(this.value)"
-                       onkeyup="this.value=this.value.toLowerCase();" type="text"/>
+
+                <input
+                        id="answer-box-input"
+                        type="text"
+                        class="search-input"
+                        oninput="fill(this.value)"
+                        onkeyup="this.value=this.value.toLowerCase();"
+                />
+
                 <div class="buttons-or-something"></div>
             </div>
             <div class="guessed-line">
