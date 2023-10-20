@@ -550,6 +550,90 @@ const countryList = [
         key: ["isveç", "sweden"],
         value: "sweden",
     },
+    {
+        key: ["swaziland"],
+        value: "swaziland",
+    },
+    {
+        key: ["syria", "suriye"],
+        value: "syria",
+    },
+    {
+        key: ["çad", "chad"],
+        value: "chad",
+    },
+    {
+        key: ["togo"],
+        value: "togo",
+    },
+    {
+        key: ["thailand", "tayland"],
+        value: "thailand",
+    },
+    {
+        key: ["thailand", "tayland"],
+        value: "thailand",
+    },
+    {
+        key: ["tajikistan", "tacikistan"],
+        value: "tajikistan",
+    },
+    {
+        key: ["turkmenistan", "türkmenistan"],
+        value: "turkmenistan",
+    },
+    {
+        key: ["east timor", "doğu timor"],
+        value: "east timor",
+    },
+    {
+        key: ["tunisia", "tunus"],
+        value: "tunisia",
+    },
+    {
+        key: ["turkey", "türkiye"],
+        value: "turkey",
+    },
+    {
+        key: ["taiwan", "tayvan"],
+        value: "taiwan",
+    },
+    {
+        key: ["tanzania", "tanzanya"],
+        value: "tanzania",
+    },
+    {
+        key: ["uganda"],
+        value: "uganda",
+    },
+    {
+        key: ["ukraine", "ukrayna"],
+        value: "ukraine",
+    },
+    {
+        key: ["uruguay"],
+        value: "uruguay",
+    },
+    {
+        key: ["uzbekistan", "özbekistan"],
+        value: "uzbekistan",
+    },
+    {
+        key: ["venezuela"],
+        value: "venezuela",
+    },
+    {
+        key: ["vietnam"],
+        value: "vietnam",
+    },
+    {
+        key: ["yemen"],
+        value: "yemen",
+    },
+    {
+        key: ["zambia", "zambiya"],
+        value: "zambia",
+    },
 
 ];
 
