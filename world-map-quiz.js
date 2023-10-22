@@ -680,7 +680,7 @@ function startQuizAndRenderTimer() {
 
 const finishGame = (viaSuccess) => {
     let ratio = enteredCountryList.length / countryList.length * 100;
-    document.getElementById("countdown-timer").innerHTML = viaSuccess ? "Başarıyla tamamladınız! Başarı %100" : "Süre doldu! Başarı %" + ratio;
+    document.getElementById("countdown-timer").innerHTML = viaSuccess ? "Başarıyla tamamladınız! Başarı %100" : "Süre doldu! Başarı %" + ratio.toFixed(2);
     document.getElementById("right-of-timer").className = "right-of-timer disabled";
 }
 
