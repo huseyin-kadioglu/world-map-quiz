@@ -1,8 +1,5 @@
 const WORLD_MAP_SVG = "worldmap-svg";
 
-
-/*
-
 const countryList = [
     {
         key: ["afganistan", "afghanistan"],
@@ -640,14 +637,17 @@ const countryList = [
 
 ];
 
-*/
 
-const countryList = [
-    {
-        key: ["turkey", "türkiye"],
-        value: "turkey"
-    }
-]
+//const countryList = [
+//    {
+//        key: ["turkey", "türkiye"],
+//        value: "turkey"
+//    },
+//    {
+//        key: ["zambia", "zambiya"],
+//        value: "zambia",
+//    }
+//]
 
 //
 // Set the date we're counting down to
@@ -655,32 +655,22 @@ function startQuizAndRenderTimer() {
 
     document.getElementById("start-button").outerHTML = "";
 
-    //var countDownDate = new Date().getTime() + 15 * 60 * 1000;
-    var countDownDate = new Date().getTime() + 3 * 1000;
-    // TODO: Zaman expired olduğunda renderı disable edeceğiz.
 
+    var counter = new Date().getTime() + 15 * 60 * 1000; // sets to 15:00
+    //var counter = new Date().getTime() + 3 * 1000;
 
-    // Update the count down every 1 second
     var x = setInterval(function () {
 
-        // Get today's date and time
         var now = new Date().getTime();
-
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
-
-        // Time calculations for hours, minutes and seconds
+        var distance = counter - now;
         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        // Display the result in the element with id="demo"
         document.getElementById("countdown-timer").innerHTML = minutes + ":" + seconds;
 
-        // If the count down is finished, write some text
         if (distance < 0) {
             clearInterval(x);
-            document.getElementById("countdown-timer").innerHTML = "EXPIRED";
-            // Süre bittiğinde textin de kapatılıyor olması gerek.
+            finishGame(false);
         }
     }, 1000);
 
@@ -688,7 +678,11 @@ function startQuizAndRenderTimer() {
     document.getElementById("right-of-timer").className = "right-of-timer";
 }
 
-//
+const finishGame = (viaSuccess) => {
+    let ratio = enteredCountryList.length / countryList.length * 100;
+    document.getElementById("countdown-timer").innerHTML = viaSuccess ? "Başarıyla tamamladınız! Başarı %100" : "Süre doldu! Başarı %" + ratio;
+    document.getElementById("right-of-timer").className = "right-of-timer disabled";
+}
 
 const enteredCountryList = [];
 
@@ -709,10 +703,8 @@ function fill(country) {
 
                 enteredCountryList.push(countryList[i].value);
 
-
                 resetTextInput();
                 showCountryProgress();
-
             }
         }
         i++;
@@ -720,8 +712,7 @@ function fill(country) {
 
     // it means we reached the final!
     if (enteredCountryList.length === countryList.length) {
-        window.alert("congrats!");
-        // TODO: Oyun bittiğinde ekranın renderlamasını durdurup mesaj yazacağız.
+        finishGame(true);
     }
 }
 
@@ -738,5 +729,4 @@ function showCountryProgress() {
 function initialCountryProgress() {
     document.getElementById("guessed-country").textContent = enteredCountryList.length;
     document.getElementById("country-progress").textContent = "/" + countryList.length + " guessed";
-
 }

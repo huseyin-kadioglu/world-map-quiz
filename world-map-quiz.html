@@ -18,9 +18,11 @@
 
     <div class="quiz-controls">
 
-        <button id="start-button" onclick="startQuizAndRenderTimer()">START</button>
-        <p id="countdown-timer"></p>
+        <div class="timer-and-start-button">
+            <p id="countdown-timer">:</p>
 
+            <button id="start-button" onclick="startQuizAndRenderTimer()">START</button>
+        </div>
 
         <div id="right-of-timer" class="right-of-timer disabled">
             <div class="answer-box">
